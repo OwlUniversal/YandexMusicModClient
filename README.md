@@ -4,6 +4,9 @@
 ### This is a modification for Yandex Music Desktop application for linux which unmodified version can be viewed [on github](https://github.com/cucumber-sp/yandex-music-linux).
 ### YandexMusicModClient or its developer is not affiliated with Yandex or any of their companies, staff etc.
 
+> [!NOTE]  
+> This modification is going to be rarely updated. Note that in mind.
+
 ## Install
 
 > [!WARNING]  
