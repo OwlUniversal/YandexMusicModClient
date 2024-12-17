@@ -1,7 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 
-/*const Logger_js_1 = require("../packages/logger/Logger.js");
+/* TODO: discord rpc
+         scroll down for some useless code
+
+const Logger_js_1 = require("../packages/logger/Logger.js");
 const store_js_1 = require("./store.js");
 const DiscordRPC = require("discord-rpc");
 const discordRichPresenceLogger = new Logger_js_1.Logger("DiscordRichPresence");
@@ -9,7 +12,7 @@ const discordRichPresenceLogger = new Logger_js_1.Logger("DiscordRichPresence");
 const settings = store_js_1.getModFeatures()?.discordRPC;
 
 const clientId = settings?.applicationIDForRPC ?? "1124055337234858005";
-const GITHUB_LINK = "https://github.com/TheKing-OfTime/YandexMusicModClient";
+const GITHUB_LINK = "https://github.com/OwlUniversal/YandexMusicModClient";
 const IS_DEEPLINKS_ROLLEDOUT = settings?.overrideDeepLinksExperiment ?? false;
 
 let rpc = undefined;
@@ -292,4 +295,12 @@ const discordRichPresence = (playingState) => {
     );
 };*/
 
-exports.discordRichPresence = null;
+const Logger_js_1 = require("../packages/logger/Logger.js");
+const logger = new Logger_js_1.Logger("DiscordRichPresence");
+
+const discordRichPresence = (playingState) => {
+    discordRichPresenceLogger.info("[FIXME]");
+    return null
+}
+
+exports.discordRichPresence = discordRichPresence;
