@@ -19,7 +19,7 @@ const Logger_js_1 = require("./packages/logger/Logger.js");
 const updater_js_1 = require("./lib/updater.js");
 const tray_js_1 = require("./lib/tray.js");
 const appSuspension_js_1 = require("./lib/appSuspension.js");
-const discordRichPresence_js_1 = require("./lib/discordRichPresence.js");
+// const discordRichPresence_js_1 = require("./lib/discordRichPresence.js");
 const taskBarExtension_js_1 = require("./lib/taskBarExtension/taskBarExtension.js");
 const cookies_js_1 = require("./constants/cookies.js");
 const store_js_1 = require("./lib/store.js");
@@ -241,7 +241,7 @@ const handleApplicationEvents = (window) => {
     }
     (0, tray_js_1.updateTrayMenu)(window);
     (0, taskBarExtension_js_1.onPlayerStateChange)(window, data);
-    (0, discordRichPresence_js_1.discordRichPresence)(data);
+    // (0, discordRichPresence_js_1.discordRichPresence)(data);
   });
   electron_1.ipcMain.handle(events_js_1.Events.GET_PASSPORT_LOGIN, async () => {
     eventsLogger.info("Event handle", events_js_1.Events.GET_PASSPORT_LOGIN);
