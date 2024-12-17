@@ -50,8 +50,8 @@ const init = () => {
     height: 800,
   });
   initField(store_js_1.StoreKeys.MOD_FEATURES, {
-    discordRPC: {
-      enable: true,
+    /*discordRPC: {
+      enable: false,
       applicationIDForRPC: "1124055337234858005",
       showButtons: true,
       showSmallIcon: false,
@@ -59,7 +59,7 @@ const init = () => {
       overrideDeepLinksExperiment: false,
       showGitHubButton: true,
       afkTimeout: 15,
-    },
+    },*/
     taskBarExtensions: {
       enable: true,
     },
