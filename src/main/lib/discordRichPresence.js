@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const Logger_js_1 = require("../packages/logger/Logger.js");
+
+/*const Logger_js_1 = require("../packages/logger/Logger.js");
 const store_js_1 = require("./store.js");
 const DiscordRPC = require("discord-rpc");
 const discordRichPresenceLogger = new Logger_js_1.Logger("DiscordRichPresence");
@@ -289,5 +290,6 @@ const discordRichPresence = (playingState) => {
     .catch((e) =>
       discordRichPresenceLogger.error("Rich Presence set failed: " + e),
     );
-};
-exports.discordRichPresence = discordRichPresence;
+};*/
+
+exports.discordRichPresence = null;
