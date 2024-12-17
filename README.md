@@ -1,75 +1,25 @@
 # YandexMusicModClient
-[![TotalDownloads](https://img.shields.io/github/downloads/TheKing-OfTime/YandexMusicModClient/total?label=Downloads)](https://github.com/TheKing-OfTime/YandexMusicModClient/releases "Download") [![OS - Windows](https://img.shields.io/badge/OS-Windows-blue?logo=windows&logoColor=white)](https://github.com/TheKing-OfTime/YandexMusicModClient/releases "Download")
+[![TotalDownloads](https://img.shields.io/github/downloads/OwlUniversal/YandexMusicModClient/total?label=Downloads)](https://github.com/OwlUniversal/YandexMusicModClient/releases "Download") [![OS - Windows](https://img.shields.io/badge/OS-Linux-blue?logo=windows&logoColor=white)](https://github.com/OwlUniversal/YandexMusicModClient/releases "Download")
 
-<p align="left">
-	<a href="https://discord.gg/HGNKDxwHEH">
-      <img height="35.48" alt="Сервер" src="https://github.com/user-attachments/assets/b7c8a272-b48c-411f-aca3-6512086a9a18">
-   </a>
-   <a href="https://github.com/TheKing-OfTime/YandexMusicModClient/">
-      <img width="96" alt="English" src="https://github.com/TheKing-OfTime/YandexMusicModClient/blob/master/assets/En_Badge_Highlighted.png">
-   </a>
-  <a href="https://github.com/TheKing-OfTime/YandexMusicModClient/blob/master/doc/ru/README.md">
-      <img width="96" alt="Русский" src="https://github.com/TheKing-OfTime/YandexMusicModClient/blob/master/assets/Ru_Badge.png">
-   </a>
-</p>
-
-## This is a modification for Yandex Music Desktop application which unmodified version can be downloaded [here](https://music.yandex.com/download/)
+### This is a modification for Yandex Music Desktop application for linux which unmodified version can be viewed [on github](https://github.com/cucumber-sp/yandex-music-linux).
 ### YandexMusicModClient or its developer is not affiliated with Yandex or any of their companies, staff etc.
-<details>
-   <summary>Message for Yandex Music Staff</summary>
-   
-   Since you found my code usefull and copied some parts from [here](https://github.com/TheKing-OfTime/YandexMusicModClient/commit/5384285a8de1101102fc21f593266807b38a304f#diff-c314348839e9fcfdd871cc449297e9cf3f9631701ff29758014ba11bf9200ba0) (more specifically PLAYER_ACTION event) and added it to vanilla client. You might want to hire me.
-   My work will be much more efficient if I work on the source code in a cozy office rather than with a minified & webpacked version of the code
-</details>
-
 
 ## Install
 
 > [!WARNING]  
 > ### Installing the modification for an unsuitable client version can lead to unpredictable results.
 > Before installing, make sure that the client version and the version for which the modification was made coincide.
-> This can be checked on the Releases page
+> This can be checked on the Releases page.
 
-0. Download latest Yandex music client from offical site https://music.yandex.com/download/
-1. Open command line (Win + R -> cmd -> Enter)
-2. Execute this command
-   ```bat
-   curl -L https://github.com/TheKing-OfTime/YandexMusicModClient/releases/latest/download/app.asar > %localappdata%/Programs/YandexMusic/resources/app.asar
-   ```
+0. Download latest [Yandex Music client](https://github.com/cucumber-sp/yandex-music-linux?tab=readme-ov-file#installation).
+1. Download latest release [from here](https://github.com/OwlUniversal/YandexMusicModClient/releases).
+2. Put the yandex-music.asar into `/usr/lib/yandex-music/`. *(do not forget to rename original to "yandex-music.asar.og")*
 3. Done!
 
 > [!NOTE]  
 > Relogin may be required after patch install.
 
-
 ## Features
-
-### Discord Rich Presence
-<details>
-   <summary>Details</summary>
-
-   
-Adds support for Discord Rich Presence
-
-<details>
-   <summary>Settings</summary>
-   
-      "discordRPC": {
-			"enable": true or false,                         //Enables or disables disocrd RPC
-			"applicationIDForRPC": "1124055337234858005",    //ID of your custom application for discord RPC
-			"showButtons": true or false,                    //Enables or disables all buttons in discord Status 
-			"overrideDeepLinksExperiment": true or false,    //Enables or disables split web and desktop buttons into one button
-			"showGitHubButton": true or false,               //Enables or disables Github button if overrideDeepLinksExperiment set to true
-			"afkTimeout": 15,				 //Timeout for activity to be cleared if track paused. Value in minutes.
-			"showAlbum": true or false,                      //Enables or disables album string in discord Status 
-   			"showSmallIcon": true or false,                  //Enables or disables status icon in discord Status 
-      }
-      
-</details>
-
-![image](https://github.com/user-attachments/assets/dd793a12-d67c-4d9e-930a-00c7f7ce47c1)
-
-</details>
 
 ### Global Shortcuts
 <details>
@@ -94,26 +44,6 @@ Currently supported only this actions (I tried add more but others work pretty u
 	}
       
 </details>
-
-</details>
-
-### Taskbar Extensions
-<details>
-   <summary>Details</summary>
-
-   
-Adds support for Taskbar Extensions
-
-<details>
-   <summary>Settings</summary>
-      
-      "taskBarExtensions": {
-			"enable": true or false //Enables or disables Taskbar Extensions
-      }
-      
-</details>
-
-![image](https://github.com/TheKing-OfTime/YandexMusicModClient/assets/68960526/8c3711a3-4bb7-4601-a291-b5c7eb5f58f0)
 
 </details>
 
@@ -193,22 +123,8 @@ Allows you to enable/disable any experiment in the app. To do so you need set `"
 
 </details>
 
-### Devtools & DevPanel
-<details>
-   <summary>Details</summary>
-   
-Devtools are disabled by default. To enable them you need modify `%appdata%\YandexMusic\config.json`:
-
-Change `"enableDevTools": false` to `"enableDevTools": true`
-
-![electron_L6SeZLnSAH](https://github.com/TheKing-OfTime/YandexMusicModClient/assets/68960526/ae841087-d910-45e5-a007-3fd869a493e1)
-
-![electron_y6aOeckPLH](https://github.com/TheKing-OfTime/YandexMusicModClient/assets/68960526/4bde4785-9196-4ac6-ad3b-9ac5db5b61c8)
-
-</details>
-
 ## Settings
-Settings can be found in `%appdata%\YandexMusic\config.json`
+Settings can be found in `HOME/.config/yandex-music/config.json`
 
 In app UI:
 <p align="left">
@@ -217,51 +133,3 @@ In app UI:
 
 > [!NOTE]  
 > App restart required for settings apply.
-
-## Support
-If you really enjoyed the new experience with this modification, you can support my work on it:
-<p align="left">
-   <a href="https://boosty.to/thekingoftime/donate">
-      <img width="250" alt="Support me on Boosty" src="https://github.com/user-attachments/assets/7b341f16-6513-4138-a3c5-b5892b062f63">
-   </a>
-</p>
-
-## Sponsors
-Thanks a lot to the sponsors who allow me to actively work on this project.
-<p align="left">
-   <a href="https://github.com/FaSSteR">
-      <img width="50" alt="FaSSteR" src="https://avatars.githubusercontent.com/u/50427367?v=4">
-   </a>
-   <a href="https://github.com/Dott-rus">
-      <img width="50" alt="Dott-rus" src="https://avatars.githubusercontent.com/u/78660260?v=4">
-   </a>
-   <a href="https://github.com/Lemon4ksan">
-      <img width="50" alt="Lemon4ksan" src="https://avatars.githubusercontent.com/u/122788290?v=4">
-   </a>
-   <a href="https://github.com/SergheyUmca">
-      <img width="50" alt="SergheyUmca" src="https://avatars.githubusercontent.com/u/33039150?v=4">
-   </a>
-   <a href="https://github.com/schwarzalexey">
-      <img width="50" alt="schwarzalexey" src="https://avatars.githubusercontent.com/u/97682066?v=4?v=4">
-   </a>
-   <a href="https://github.com/dudoska">
-      <img width="50" alt="dudoska" src="https://avatars.githubusercontent.com/u/94677394?v=4">
-   </a>
-   <a href="https://github.com/Diramix">
-      <img width="50" alt="Diramix" src="https://avatars.githubusercontent.com/u/79011730?v=4">
-   </a>
-   <a href="https://github.com/trigger-off">
-      <img width="50" alt="trigger-off" src="https://avatars.githubusercontent.com/u/71810229?v=4">
-   </a>
-   <a href="https://github.com/Baduga">
-      <img width="50" alt="Baduga" src="https://avatars.githubusercontent.com/u/69755854?v=4">
-   </a>
-   <a href="https://github.com/LazyMind">
-      <img width="50" alt="LazyMind" src="https://avatars.githubusercontent.com/u/87148057?v=4">
-   </a>
-   <a href="https://github.com/Schelchki">
-      <img width="50" alt="Schelchki" src="https://avatars.githubusercontent.com/u/162707132?v=4">
-   </a>
-</p>
-
-> This list updates manually.
